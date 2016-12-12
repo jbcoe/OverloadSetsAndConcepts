@@ -1,3 +1,6 @@
 [submodule "externals/catch"]
 	path = externals/catch
 	url = https://github.com/philsquared/Catch.git
+[submodule "externals/eggs-variant"]
+	path = externals/eggs-variant
+	url = https://github.com/eggs-cpp/variant.git

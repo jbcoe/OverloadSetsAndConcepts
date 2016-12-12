@@ -24,7 +24,7 @@ def main():
     src_dir = os.path.dirname(os.path.dirname(__file__))
 
     subprocess.check_call(
-        "cmake . -B{} -DCMAKE_BUILD_TYPE={}".format(args.out_dir,
+        "cmake . -B{} -GNinja -DCMAKE_BUILD_TYPE={} -DCMAKE_CXX_COMPILER=g++-6".format(args.out_dir,
                                                     args.config).split(),
         cwd=src_dir)
     subprocess.check_call(

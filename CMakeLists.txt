@@ -1,7 +1,9 @@
 cmake_minimum_required (VERSION 3.1)
 set(CMAKE_CXX_STANDARD 14) 
 
-include_directories(SYSTEM externals/catch/include/)
+add_compile_options(-fconcepts)
+
+include_directories(SYSTEM externals/catch/include externals/eggs-variant/include)
 
 add_executable(test_me test_me.cpp)
 
